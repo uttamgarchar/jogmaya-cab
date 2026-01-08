@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import toyotaOffer from "@/assets/toyota-offer.png";
+import toyotaOffer from "@/assets/invova.png";
 import AnimatedSection from "./AnimatedSection";
 
 const PromoSection = () => {
@@ -42,9 +42,9 @@ const PromoSection = () => {
               />
             </motion.div>
           </AnimatedSection>
-          
+
           <AnimatedSection direction="right" delay={0.2} className="order-1 md:order-2 text-center md:text-left">
-            <motion.h3 
+            <motion.h3
               className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -57,9 +57,9 @@ const PromoSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-foreground text-background px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold text-sm sm:text-base"
-              whileHover={{ 
-                scale: 1.05, 
-                boxShadow: "0 20px 40px -15px rgba(0, 0, 0, 0.3)" 
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 20px 40px -15px rgba(0, 0, 0, 0.3)"
               }}
               whileTap={{ scale: 0.95 }}
             >
