@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 22 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 22 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 22 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom colors for Kuldevi */
+    --kuldevi-orange: 22 100% 50%;
+    --kuldevi-dark: 220 13% 18%;
+    --kuldevi-gray: 220 9% 46%;
+    --kuldevi-light-gray: 220 14% 96%;
+    --kuldevi-blue: 210 100% 45%;
+    --header-bg: 0 0% 0%;
+    --services-bg: 220 14% 96%;
+    --promo-bg: 22 100% 50%;
+    --call-section-bg: 22 100% 50%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 0 0% 100%;
+    --card: 220 13% 18%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 13% 18%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 22 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 13% 18%;
+    --muted-foreground: 220 9% 70%;
+    --accent: 22 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 22 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-rubik;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-rubik;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-20;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-heading h4 {
+    @apply text-primary text-sm uppercase tracking-wider mb-2;
+  }
+
+  .section-heading h2 {
+    @apply text-3xl md:text-4xl font-bold text-foreground capitalize;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded font-medium 
+           hover:bg-orange-600 transition-colors duration-300 inline-block;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded font-medium 
+           hover:bg-primary hover:text-primary-foreground transition-colors duration-300 inline-block;
+  }
+
+  .service-card {
+    @apply bg-card p-8 rounded-lg text-center relative transition-all duration-300
+           hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .offer-card {
+    @apply bg-card rounded-lg overflow-hidden shadow-lg transition-all duration-300
+           hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .testimonial-card {
+    @apply bg-card p-8 rounded-lg shadow-lg;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(22 100% 45%);
+}
+
+/* Hero slider animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Floating phone button */
+.floating-phone {
+  @apply fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center
+         text-white text-2xl shadow-lg hover:bg-green-600 transition-colors z-50;
+}
