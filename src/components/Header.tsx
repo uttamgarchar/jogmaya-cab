@@ -35,7 +35,7 @@ const Header = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground text-sm sm:text-base">Gujarat, IND</h4>
-                <p className="text-xs sm:text-sm text-muted-foreground">Morbi</p>
+                <p className="text-xs sm:text-sm text-muted-foreground">National Highway NH-8 lalpar morbi 363642</p>
               </div>
             </motion.div>
 
@@ -56,7 +56,7 @@ const Header = () => {
             </motion.div>
 
             <motion.a
-              href="https://api.whatsapp.com/send?phone=918460004588&text=Hello%20Jay%20Jogmaya%20Car%20Rental"
+              href="https://api.whatsapp.com/send?phone=8460004588&text=Hello%20Jay%20Jogmaya%20Car%20Rental"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-4 sm:px-6 py-2 sm:py-3 rounded flex items-center gap-2 text-sm sm:text-base font-medium"

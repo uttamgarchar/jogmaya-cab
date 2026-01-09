@@ -53,7 +53,7 @@ const PromoSection = () => {
               Do You Want To Earn With Us? So Don't be Late.
             </motion.h3>
             <motion.a
-              href="https://api.whatsapp.com/send?phone=919624628585&text=i%27m%20intrusted"
+              href="https://api.whatsapp.com/send?phone=8460004588&text=i%27m%20intrusted"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-foreground text-background px-6 sm:px-8 py-3 sm:py-4 rounded font-semibold text-sm sm:text-base"

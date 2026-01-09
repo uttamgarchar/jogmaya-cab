@@ -93,14 +93,14 @@ const CarsSection = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl">Hot offers</h2>
           </div>
         </AnimatedSection>
-        
-        <StaggerContainer 
+
+        <StaggerContainer
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-4 sm:px-0"
           staggerDelay={0.1}
         >
           {cars.map((car) => (
             <StaggerItem key={car.id}>
-              <motion.div 
+              <motion.div
                 className="offer-card group"
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
@@ -129,9 +129,9 @@ const CarsSection = () => {
                     className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
-                
+
                 <div className="p-4 sm:p-6">
-                  <motion.h3 
+                  <motion.h3
                     className="text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors"
                   >
                     {car.name}
@@ -139,14 +139,14 @@ const CarsSection = () => {
                   <h4 className="text-xl sm:text-2xl font-bold text-primary mb-3 sm:mb-4">
                     {car.price}<span className="text-xs sm:text-sm font-normal text-muted-foreground">/ Km</span>
                   </h4>
-                  
+
                   <ul className="space-y-2 mb-4 sm:mb-6">
                     {[
                       { icon: Car, text: `Model: ${car.model}` },
                       { icon: Settings, text: car.transmission },
                       { icon: Gauge, text: car.mileage },
                     ].map((item, i) => (
-                      <motion.li 
+                      <motion.li
                         key={i}
                         className="flex items-center gap-2 text-muted-foreground text-sm"
                         initial={{ opacity: 0, x: -10 }}
@@ -159,10 +159,10 @@ const CarsSection = () => {
                       </motion.li>
                     ))}
                   </ul>
-                  
+
                   <div className="flex gap-2 sm:gap-3">
                     <motion.a
-                      href="tel:9624628585"
+                      href="tel:8460004588"
                       className="flex-1 btn-primary text-center text-xs sm:text-sm py-2 sm:py-3"
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
@@ -170,7 +170,7 @@ const CarsSection = () => {
                       Rent Car
                     </motion.a>
                     <motion.a
-                      href={`https://api.whatsapp.com/send?phone=919624628585&text=${car.whatsappText}`}
+                      href={`https://api.whatsapp.com/send?phone=8460004588&text=${car.whatsappText}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 btn-outline text-center text-xs sm:text-sm py-2 sm:py-3"

@@ -9,7 +9,7 @@ const slides = [
     title: "Reserved Now & Get",
     highlight: "10% Off",
     buttonText: "Reserve Now!",
-    buttonLink: "https://api.whatsapp.com/send?phone=919624628585&text=Ertiga%20Details",
+    buttonLink: "https://api.whatsapp.com/send?phone=8460004588&text=Ertiga%20Details",
     image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&q=80",
   },
   {
@@ -18,7 +18,7 @@ const slides = [
     title: "Best Cars at",
     highlight: "Best Price",
     buttonText: "Book Now!",
-    buttonLink: "https://api.whatsapp.com/send?phone=919624628585&text=Booking%20Inquiry",
+    buttonLink: "https://api.whatsapp.com/send?phone=8460004588&text=Booking%20Inquiry",
     image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=80",
   },
 ];
@@ -64,18 +64,18 @@ const HeroSlider = () => {
           <motion.div
             key={i}
             className="absolute w-2 h-2 bg-primary/30 rounded-full"
-            initial={{ 
-              x: Math.random() * window.innerWidth, 
-              y: window.innerHeight + 50 
+            initial={{
+              x: Math.random() * window.innerWidth,
+              y: window.innerHeight + 50
             }}
-            animate={{ 
+            animate={{
               y: -50,
-              x: Math.random() * window.innerWidth 
+              x: Math.random() * window.innerWidth
             }}
-            transition={{ 
+            transition={{
               duration: 8 + Math.random() * 4,
               repeat: Infinity,
-              delay: Math.random() * 5 
+              delay: Math.random() * 5
             }}
           />
         ))}
@@ -93,7 +93,7 @@ const HeroSlider = () => {
               transition={{ duration: 0.5 }}
               className="text-center md:text-left max-w-2xl px-4"
             >
-              <motion.p 
+              <motion.p
                 className="text-primary-foreground text-base sm:text-lg mb-3 sm:mb-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -101,14 +101,14 @@ const HeroSlider = () => {
               >
                 {slides[currentSlide].subtitle}
               </motion.p>
-              <motion.h2 
+              <motion.h2
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
                 {slides[currentSlide].title}{" "}
-                <motion.span 
+                <motion.span
                   className="text-primary inline-block"
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
@@ -170,9 +170,8 @@ const HeroSlider = () => {
           <motion.button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
-              index === currentSlide ? "bg-primary" : "bg-primary-foreground/50"
-            }`}
+            className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? "bg-primary" : "bg-primary-foreground/50"
+              }`}
             whileHover={{ scale: 1.3 }}
             whileTap={{ scale: 0.9 }}
             animate={index === currentSlide ? { scale: [1, 1.2, 1] } : {}}
