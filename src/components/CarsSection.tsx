@@ -2,9 +2,8 @@ import { Car, Settings, Gauge } from "lucide-react";
 import { motion } from "framer-motion";
 import ertiga from "@/assets/ertiga.jpg";
 import swiftDzire from "@/assets/ms-swift-dzire.jpg";
-import toyotaEtios from "@/assets/toyota-etios.jpg";
-import ciaz from "@/assets/ms-ciaz.jpg";
-import hondaCity from "@/assets/honda-city.jpg";
+import brezza from "@/assets/Brezza.png";
+import hondaAmaze from "@/assets/Honda-amaze.png";
 import toyotaInnova from "@/assets/toyota-innova.jpg";
 import tempoTraveller from "@/assets/tempo-traveller.jpg";
 import AnimatedSection from "./AnimatedSection";
@@ -31,31 +30,22 @@ const cars = [
     mileage: "15kmpl",
     whatsappText: "swift-dzire%20Details",
   },
-  {
-    id: 3,
-    name: "Toyota Etios",
-    price: "Rs.12.00",
-    image: toyotaEtios,
-    model: "2020",
-    transmission: "Manuel",
-    mileage: "15kmpl",
-    whatsappText: "Ertiga%20Details",
-  },
+
   {
     id: 4,
-    name: "Maruti Ciaz",
+    name: "Maruti breza",
     price: "Rs.12.00",
-    image: ciaz,
+    image: brezza,
     model: "2020",
     transmission: "Manuel",
     mileage: "15kmpl",
-    whatsappText: "Maruti-Ciaz%20Details",
+    whatsappText: "Maruti-breza%20Details",
   },
   {
     id: 5,
-    name: "Honda City",
+    name: "Honda amej",
     price: "Rs.12.00",
-    image: hondaCity,
+    image: hondaAmaze,
     model: "2021",
     transmission: "Manuel",
     mileage: "15kmpl",
