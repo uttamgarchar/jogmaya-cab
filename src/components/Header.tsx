@@ -35,7 +35,7 @@ const Header = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground text-sm sm:text-base">Gujarat, IND</h4>
-                <p className="text-xs sm:text-sm text-muted-foreground">National Highway NH-8 <br />lalpar morbi 363642</p>
+                <p className="text-xs sm:text-sm text-muted-foreground">National Highway NH-8 lalpar <br />morbi 363642</p>
               </div>
             </motion.div>
 
